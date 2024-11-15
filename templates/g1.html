@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Volkswagen Golf I Хэтчбэк{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <!-- Галерея изображений товара -->
+            <div class="col-md-9">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Первое изображение активно -->
+                        <div class="carousel-item active">
+                            <img src="{{url_for('static',filename='img/golf-1/1.webp')}}" class="d-block w-100" alt="Изображение 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static',filename='img/golf-1/2.webp')}}" class="d-block w-100" alt="Изображение 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static',filename='img/golf-1/3.webp')}}" class="d-block w-100" alt="Изображение 2">
+                        </div>
+                    </div>
+                    <!-- Навигационные кнопки -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Описание товара -->
+            <div class="col-md-6">
+                <h2 class="mb-3">Volkswagen Golf I Хэтчбэк</h2>
+                <p class="lead">Технические характеристики, комплектации и цены</p>
+                <p>Хэтчбек 5 дв. C-класса, передний привод. Механика и автомат. Бензиновые и дизельные двигатели мощностью от 50 до 75 лошадиных сил.</p>
+                <h4 class="mt-4">Цена: 900,000 ₽</h4>
+            </div>
+        </div>
+{%endblock%}

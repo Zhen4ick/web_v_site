@@ -1,0 +1,22 @@
+.navbar-custom {
+    background-color: #F7EDE1;
+}
+.navbar-nav .nav-link {
+    color: #103b4b;
+    font-size: x-large;
+}
+
+.btn-primary,
+.btn-primary:hover,   
+.btn-primary:focus,
+.btn-primary:visited{
+    background-color: #dc5240 !important;
+    border-color: #dc5240 !important;
+    color: white;
+}
+body{
+    background-color: #f7ede1;
+}
+.card{
+    background-color: whitesmoke;
+}

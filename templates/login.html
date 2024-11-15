@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Вход{% endblock %}
+{% block content %}
+<h2>Вход</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="username" class="form-label">Имя пользователя:</label>
+        <input type="text" name="username" class="form-control" id="username" placeholder="Введите имя пользователя">
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Пароль:</label>
+        <input type="password" name="password" class="form-control"id="password" placeholder="Введите пароль">
+    </div>
+        <button type="submit" class="btn btn-primary">
+            Войти
+        </button>
+
+    </div>
+    <p class="text-center">Ещё нет аккаунта? <a href="{{ url_for('register') }}" class="font-bold text-blue-500 hover:underline">Зарегистрироваться</a></p>
+</form>
+{% endblock %}

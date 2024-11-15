@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+        <h2>Регистрация</h2>
+
+        <form method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Имя пользователя:</label>
+                <input type="text"  class = "form-control" name="username" id="username" placeholder="Введите имя пользователя">
+            </div>
+
+            <div class="mb-3">
+                <label for="password"  class="form-label" >Пароль:</label>
+                <input type="password" class = "form-control" name="password" id="password" placeholder="Введите пароль">
+            </div>
+
+             <div class="mb-3">
+                <label for="password2" class="form-label">Повторите пароль:</label>
+                <input type="password" class = "form-control" name="password2" id="password2" placeholder="Повторите пароль">
+            </div>
+                <button type="submit" class="btn btn-primary">
+                    Зарегистрироваться
+                </button>
+
+            </div>
+            <p class="text-center">Уже есть аккаунт? <a href="{{ url_for('login') }}" class="font-bold text-blue-500 hover:underline">Войти</a></p>
+        </form>
+{% endblock %}

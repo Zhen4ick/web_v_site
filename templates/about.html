@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+        <p class="text-left">Вы находитесь на сайте магазина по продаже поддержанных авто Volkswagen 1980-2000х годов выпуска.Осмотр автомобилей после бронирования по телефону</p>
+        <h1 class="display-4 text-center">Контактная информация</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <h2>Социальные сети</h2>
+                <a href="https://t.me/bstu_voenmeh"><img src="{{url_for('static',filename='img/telegram.jpg')}}" width="250" height="250" style="margin-top: 15px;"></a>
+                <a href="https://vk.com/bstu_voenmeh"><img src="{{url_for('static',filename='img/vk.jpg')}}" width="250" height="250" style="margin-top: 15px;"></a>
+            </div>
+            <div class="col-md-4">
+                <h2>Контакты</h2>
+                <p class="lead">8 (800) 555 35 35</p>
+            </div>
+            <div class="col-md-4">
+                <h2>Местонахождение</h2>
+                <p class="lead">1-я Красноармейская улица, 13В, Санкт-Петербург, 190005</p>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/1_ya_krasnoarmeyskaya_ulitsa_13v/Z0kYdQdpQEQFQFtjfXVwdnlkbA==/?ll=30.309913%2C59.917579&utm_medium=mapframe&utm_source=maps&z=17.11" style="color:#eee;font-size:12px;position:absolute;top:14px;">1-я Красноармейская улица, 13В — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.309913%2C59.917579&mode=whatshere&whatshere%5Bpoint%5D=30.308451%2C59.917085&whatshere%5Bzoom%5D=17&z=17.11" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{%endblock%}

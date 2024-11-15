@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+        <h1 class="text-center" style="color: #103b4b">Добро пожаловать в Vagoshop!</h1>
+        <p class="text-center" style="color: #103b4b">Все новое — хорошо забытое старое</p>
+        <!-- Пассаты -->
+        <div class="row mt-4">
+            <h1 class="text-left" style="color: #dc5240">Passat</h1>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/passat-b1/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b1/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b1/3.webp') }}" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Passat B1 Хэтчбэк</h5>
+                        <p class="card-text">1973 — 1981</p>
+                        <p class="card-text">Цена: 600,000 ₽</p>
+                        <a href="{{ url_for('b1') }}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel2" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/passat-b2/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b2/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b2/3.webp') }}" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Passat B2 Хэтчбэк</h5>
+                        <p class="card-text">1980 — 1988</p>
+                        <p class="card-text">Цена: 600,000 ₽</p>
+                        <a href="{{ url_for('b2') }}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel3" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/passat-b3/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b3/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b3/3.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b3/4.webp') }}" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Passat B3 Седан</h5>
+                        <p class="card-text">1988 — 1993</p>
+                        <p class="card-text">Цена: 300,000 ₽</p>
+                        <a href="{{ url_for('b3')}}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel4" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/passat-b4/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/passat-b4/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Passat B4 Седан</h5>
+                            <p class="card-text">1993 — 1997</p>
+                            <p class="card-text">Цена: 400,000 ₽</p>
+                            <a href="{{url_for('b4')}}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Гольфы -->
+        <div class="row mt-4">
+            <h1 class="text-left" style="color: #dc5240">Golf</h1>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel5" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/golf-1/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/golf-1/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Golf I Хэтчбэк</h5>
+                            <p class="card-text">1974 — 1993</p>
+                            <p class="card-text">Цена: 900,000 ₽</p>
+                            <a href="{{url_for('g1')}}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel6" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/golf-2/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/golf-2/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Golf II Хэтчбэк</h5>
+                            <p class="card-text">1983 — 1992</p>
+                            <p class="card-text">Цена: 800,000 ₽</p>
+                            <a href="{{url_for('g2')}}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-4">
+                    <div id="carousel7" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/golf-3/1.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/golf-3/2.webp') }}" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/golf-3/3.webp') }}" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel7"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel7"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen Golf III Универсал</h5>
+                            <p class="card-text">1991 — 2000</p>
+                            <p class="card-text">Цена: 600,000 ₽.</p>
+                            <a href="{{url_for('g3')}}" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+{%endblock%}

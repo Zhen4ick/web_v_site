@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Volkswagen Passat B3 Седан{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <!-- Галерея изображений товара -->
+            <div class="col-md-9">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Первое изображение активно -->
+                        <div class="carousel-item active">
+                            <img src="{{url_for('static',filename='img/passat-b3/1.webp')}}" class="d-block w-100" alt="Изображение 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static',filename='img/passat-b3/2.webp')}}" class="d-block w-100" alt="Изображение 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static',filename='img/passat-b3/3.webp')}}" class="d-block w-100" alt="Изображение 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{url_for('static',filename='img/passat-b3/4.webp')}}" class="d-block w-100" alt="Изображение 3">
+                        </div>
+                    </div>
+                    <!-- Навигационные кнопки -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Описание товара -->
+            <div class="col-md-6">
+                <h2 class="mb-3">Volkswagen Passat B3 Седан</h2>
+                <p class="lead">Технические характеристики, комплектации и цены</p>
+                <p>Седан D-класса, передний и полный привод. Механика и автомат. Дизельные и бензиновые двигатели мощностью от 68 до 174 лошадиных сил.</p>
+                <h4 class="mt-4">Цена: 600,000 ₽</h4>
+            </div>
+        </div>
+{%endblock%}
